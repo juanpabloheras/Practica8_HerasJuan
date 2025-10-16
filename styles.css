@@ -220,7 +220,7 @@ main {
         gap: 20px;
         background-color: black;
         width: 300px;
-        height: 900px;
+        height: auto;
     }
 
     .aside-section {
