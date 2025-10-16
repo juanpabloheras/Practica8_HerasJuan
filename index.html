@@ -6,16 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playlist: This is Taylor Swift</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./icons/spotify.png">
 </head>
 
 <body>
     <div class="container">
         <aside class="sidebar">
+            <h2>Tu biblioteca</h2>
+            <nav class="sidebar-titles">
+                <ul>
+                    <li>Playlist</li>
+                    <li>Podcasts</li>
+                    <li>Álbumes</li>
+                </ul>
+            </nav>
+            <div class="aside-section">
+                <button><img src="./icons/purpleHeart.svg" alt=""> Tus me gusta</button>
+            </div>
+            <div class="aside-section">
+                <button><img src="./icons/musicNote.svg" alt=""> Your Top Songs 2023</button>
+            </div>
+            <div class="aside-section">
+                <button><img src="./icons/repeatButton.svg" alt=""> En repetición<nav></nav></button>
+            </div>
+            <div class="aside-section">
+                <button><img src="./icons/djIcon.svg" alt="">DJ</button>
+            </div>
+
         </aside>
 
         <main>
             <header class="playlist-header">
-                <img src="./img/coverTaylor.jpg" alt="Portada de Taylor Swift">
+                <img src="./img/coverTaylor.jpg" alt="Portada de Taylor Swift" class="playlist-cover">
                 <div class="playlist-info">
                     <p class="playlist-type">Playlist pública</p>
                     <h1>This is Taylor Swift</h1>
@@ -37,47 +59,107 @@
 
             <section class="songs">
                 <div class="songs-header row">
-                    <p>#</p>
-                    <p>Título</p>
-                    <p>Álbum</p>
-                    <p>Fecha</p>
-                    <p>Duración</p>
+                    <p class="num">#</p>
+                    <p class="wide">Título</p>
+                    <p class="wide">Álbum</p>
+                    <p class="date">Fecha</p>
+                    <p class="duration">Duración</p>
                 </div>
 
                 <div class="songs-list">
                     <div class="songs-row row">
-                        <span>1</span>
-                        <div class="song-info">
-                            <p class="song-title">The Fate of Ophelia</p>
-                            <p class="song-artist">Taylor Swift</p>
+                        <span class="num">1</span>
+                        <div class="song-info-mobile">
+                            <div class="song-info wide">
+                                <p>The Fate of Ophelia</p>
+                                <p>Taylor Swift</p>
+                            </div>
+                            <p class="song-album wide">The Life of a Showgirl</p>
                         </div>
-                        <p class="song-album">The Life of a Showgirl</p>
-                        <p class="song-date">09/10/2025</p>
-                        <p class="song-duration">3:46</p>
+                        <p class="song-date date">09/10/2025</p>
+                        <p class="song-duration duration">3:46</p>
+                    </div>
+                    <div class="songs-row row">
+                        <span class="num">2</span>
+                        <div class="song-info-mobile">
+                            <div class="song-info wide">
+                                <p>I Knew You Were Trouble</p>
+                                <p>Taylor Swift</p>
+                            </div>
+                            <p class="song-album wide">Red</p>
+                        </div>
+                        <p class="song-date date">10/22/2012</p>
+                        <p class="song-duration duration">3:39</p>
                     </div>
 
                     <div class="songs-row row">
-                        <span>2</span>
-                        <div class="song-info">
-                            <p class="song-title">Love Story</p>
-                            <p class="song-artist">Taylor Swift</p>
+                        <span class="num">3</span>
+                        <div class="song-info-mobile">
+                            <div class="song-info wide">
+                                <p>Love Story</p>
+                                <p>Taylor Swift</p>
+                            </div>
+                            <p class="song-album wide">Fearless</p>
                         </div>
-                        <p class="song-album">Fearless</p>
-                        <p class="song-date">11/11/2008</p>
-                        <p class="song-duration">3:55</p>
+                        <p class="song-date date">09/15/2008</p>
+                        <p class="song-duration duration">3:55</p>
                     </div>
 
                     <div class="songs-row row">
-                        <span>3</span>
-                        <div class="song-info">
-                            <p class="song-title">Anti-Hero</p>
-                            <p class="song-artist">Taylor Swift</p>
+                        <span class="num">4</span>
+                        <div class="song-info-mobile">
+                            <div class="song-info wide">
+                                <p>Blank Space</p>
+                                <p>Taylor Swift</p>
+                            </div>
+                            <p class="song-album wide">1989</p>
                         </div>
-                        <p class="song-album">Midnights</p>
-                        <p class="song-date">21/10/2022</p>
-                        <p class="song-duration">3:21</p>
+                        <p class="song-date date">10/27/2014</p>
+                        <p class="song-duration duration">3:51</p>
                     </div>
+
+                    <div class="songs-row row">
+                        <span class="num">5</span>
+                        <div class="song-info-mobile">
+                            <div class="song-info wide">
+                                <p>Delicate</p>
+                                <p>Taylor Swift</p>
+                            </div>
+                            <p class="song-album wide">Reputation</p>
+                        </div>
+                        <p class="song-date date">11/10/2017</p>
+                        <p class="song-duration duration">3:52</p>
+                    </div>
+
+                    <div class="songs-row row">
+                        <span class="num">6</span>
+                        <div class="song-info-mobile">
+                            <div class="song-info wide">
+                                <p>Cardigan</p>
+                                <p>Taylor Swift</p>
+                            </div>
+                            <p class="song-album wide">Folklore</p>
+                        </div>
+                        <p class="song-date date">07/24/2020</p>
+                        <p class="song-duration duration">4:00</p>
+                    </div>
+
+                    <div class="songs-row row">
+                        <span class="num">7</span>
+                        <div class="song-info-mobile">
+                            <div class="song-info wide">
+                                <p>Lover</p>
+                                <p>Taylor Swift</p>
+                            </div>
+                            <p class="song-album wide">Lover</p>
+                        </div>
+                        <p class="song-date date">08/23/2019</p>
+                        <p class="song-duration duration">3:41</p>
+                    </div>
+
+
                 </div>
+
             </section>
         </main>
     </div>
